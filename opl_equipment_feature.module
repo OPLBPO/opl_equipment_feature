@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OPL Equipment Feature feature.
+ */
+
+include_once 'opl_equipment_feature.features.inc';
