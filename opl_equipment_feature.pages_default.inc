@@ -176,7 +176,7 @@ function opl_equipment_feature_default_page_manager_handlers() {
     'delta_offset' => '0',
     'delta_reversed' => FALSE,
     'formatter_settings' => array(
-      'title_style' => 'h2',
+      'title_style' => 'h1',
       'title_link' => '',
       'title_class' => '',
     ),

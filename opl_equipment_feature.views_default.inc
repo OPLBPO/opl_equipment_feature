@@ -22,7 +22,7 @@ function opl_equipment_feature_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Imagine Space Equipment / Tools / Products';
+  $handler->display->display_options['title'] = 'Imagine Space Equipment ';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -855,39 +855,6 @@ function opl_equipment_feature_views_default_views() {
     'equipment' => 'equipment',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Booking and Borrowing (field_borrowable) */
-  $handler->display->display_options['filters']['field_borrowable_value']['id'] = 'field_borrowable_value';
-  $handler->display->display_options['filters']['field_borrowable_value']['table'] = 'field_data_field_borrowable';
-  $handler->display->display_options['filters']['field_borrowable_value']['field'] = 'field_borrowable_value';
-  $handler->display->display_options['filters']['field_borrowable_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_borrowable_value']['expose']['operator_id'] = 'field_borrowable_value_op';
-  $handler->display->display_options['filters']['field_borrowable_value']['expose']['label'] = 'Borrowing or Booking options';
-  $handler->display->display_options['filters']['field_borrowable_value']['expose']['operator'] = 'field_borrowable_value_op';
-  $handler->display->display_options['filters']['field_borrowable_value']['expose']['identifier'] = 'field_borrowable_value';
-  $handler->display->display_options['filters']['field_borrowable_value']['expose']['multiple'] = TRUE;
-  $handler->display->display_options['filters']['field_borrowable_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    15 => 0,
-    1 => 0,
-    24 => 0,
-    12 => 0,
-    14 => 0,
-    21 => 0,
-    26 => 0,
-    4 => 0,
-    17 => 0,
-    27 => 0,
-    30 => 0,
-    31 => 0,
-    33 => 0,
-    34 => 0,
-    35 => 0,
-    36 => 0,
-    37 => 0,
-    38 => 0,
-    39 => 0,
-    40 => 0,
-  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -1082,7 +1049,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['inherit_panels_path'] = '1';
   $translatables['equipment'] = array(
     t('Master'),
-    t('Imagine Space Equipment / Tools / Products'),
+    t('Imagine Space Equipment '),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -1112,7 +1079,6 @@ function opl_equipment_feature_views_default_views() {
     t('Equipment List - Flexslider'),
     t('Block - Grid'),
     t('Equipment List - Grid'),
-    t('Borrowing or Booking options'),
     t('Content pane 1'),
     t('All'),
     t('View panes'),
@@ -1228,14 +1194,14 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['sorts']['sticky']['table'] = 'search_api_index_equipment';
   $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
-  /* Sort criterion: Indexed Content: Title */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'search_api_index_equipment';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Sort criterion: Indexed Content: Software or Hardware */
   $handler->display->display_options['sorts']['field_software_or_hardware']['id'] = 'field_software_or_hardware';
   $handler->display->display_options['sorts']['field_software_or_hardware']['table'] = 'search_api_index_equipment';
   $handler->display->display_options['sorts']['field_software_or_hardware']['field'] = 'field_software_or_hardware';
+  /* Sort criterion: Indexed Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'search_api_index_equipment';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -1249,7 +1215,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'medium',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Field: Indexed Content: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
@@ -1282,6 +1248,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['fields']['field_guide']['table'] = 'search_api_index_equipment';
   $handler->display->display_options['fields']['field_guide']['field'] = 'field_guide';
   $handler->display->display_options['fields']['field_guide']['label'] = 'Help Guide';
+  $handler->display->display_options['fields']['field_guide']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_guide']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_guide']['link_to_entity'] = 1;
   $handler->display->display_options['fields']['field_guide']['view_mode'] = 'full';
@@ -1290,6 +1257,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['fields']['field_project_ttype']['id'] = 'field_project_ttype';
   $handler->display->display_options['fields']['field_project_ttype']['table'] = 'search_api_index_equipment';
   $handler->display->display_options['fields']['field_project_ttype']['field'] = 'field_project_ttype';
+  $handler->display->display_options['fields']['field_project_ttype']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_project_ttype']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_project_ttype']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_project_ttype']['bypass_access'] = 0;
@@ -1304,6 +1272,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['fields']['field_available_software1']['id'] = 'field_available_software1';
   $handler->display->display_options['fields']['field_available_software1']['table'] = 'search_api_index_equipment';
   $handler->display->display_options['fields']['field_available_software1']['field'] = 'field_available_software1';
+  $handler->display->display_options['fields']['field_available_software1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_available_software1']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_available_software1']['link_to_entity'] = 1;
   $handler->display->display_options['fields']['field_available_software1']['view_mode'] = 'full';
