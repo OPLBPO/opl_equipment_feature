@@ -239,6 +239,9 @@ function opl_equipment_feature_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -278,7 +281,7 @@ function opl_equipment_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_location';
-  $strongarm->value = '0';
+  $strongarm->value = '4';
   $export['language_content_type_location'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -387,6 +390,13 @@ function opl_equipment_feature_strongarm() {
   $strongarm->name = 'pathauto_node_equipment_und_pattern';
   $strongarm->value = '';
   $export['pathauto_node_equipment_und_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_location_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_location_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

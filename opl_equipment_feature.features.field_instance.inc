@@ -1099,7 +1099,7 @@ function opl_equipment_feature_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'colorbox_node_classes' => '',

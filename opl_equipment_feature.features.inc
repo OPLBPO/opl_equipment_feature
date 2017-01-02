@@ -74,6 +74,7 @@ function opl_equipment_feature_default_search_api_index() {
       "index_directly" : 1,
       "cron_limit" : "50",
       "fields" : {
+        "author" : { "type" : "integer", "entity_type" : "user" },
         "field_available_software1" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "node" },
         "field_booking_type" : { "type" : "integer" },
         "field_borrowable" : { "type" : "integer" },
@@ -82,7 +83,9 @@ function opl_equipment_feature_default_search_api_index() {
         "field_project_ttype:tid" : { "type" : "list\\u003Cinteger\\u003E" },
         "field_software_or_hardware" : { "type" : "string" },
         "nid" : { "type" : "integer" },
+        "search_api_access_node" : { "type" : "list\\u003Cstring\\u003E" },
         "search_api_language" : { "type" : "string" },
+        "status" : { "type" : "boolean" },
         "sticky" : { "type" : "boolean" },
         "title" : { "type" : "string" },
         "type" : { "type" : "string" }
@@ -93,7 +96,7 @@ function opl_equipment_feature_default_search_api_index() {
           "weight" : "-10",
           "settings" : { "default" : "1", "bundles" : [] }
         },
-        "search_api_alter_node_access" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "search_api_alter_node_access" : { "status" : 1, "weight" : "0", "settings" : [] },
         "search_api_alter_node_status" : { "status" : 0, "weight" : "0", "settings" : [] },
         "search_api_alter_language_control" : {
           "status" : 0,
@@ -134,11 +137,7 @@ function opl_equipment_feature_default_search_api_index() {
         "search_api_tokenizer" : {
           "status" : 1,
           "weight" : "20",
-          "settings" : {
-            "fields" : { "title" : true },
-            "spaces" : "[^[:alnum:]]",
-            "ignorable" : "[\\u0027]"
-          }
+          "settings" : { "fields" : [], "spaces" : "[^[:alnum:]]", "ignorable" : "[\\u0027]" }
         },
         "search_api_stopwords" : {
           "status" : 0,
@@ -164,7 +163,7 @@ function opl_equipment_feature_default_search_api_index() {
       }
     },
     "enabled" : "1",
-    "read_only" : "0",
+    "read_only" : "1",
     "rdf_mapping" : []
   }');
   return $items;

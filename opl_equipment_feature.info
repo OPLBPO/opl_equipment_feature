@@ -101,6 +101,7 @@ features[variable][] = pathauto_node_equipment_en_pattern
 features[variable][] = pathauto_node_equipment_fr_pattern
 features[variable][] = pathauto_node_equipment_pattern
 features[variable][] = pathauto_node_equipment_und_pattern
+features[variable][] = pathauto_node_location_pattern
 features[variable][] = pathauto_taxonomy_term_imagine_space_project_streams_pattern
 features[variable][] = xmlsitemap_settings_node_equipment
 features[variable][] = xmlsitemap_settings_node_location
