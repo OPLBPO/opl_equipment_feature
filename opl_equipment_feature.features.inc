@@ -163,7 +163,7 @@ function opl_equipment_feature_default_search_api_index() {
       }
     },
     "enabled" : "1",
-    "read_only" : "1",
+    "read_only" : "0",
     "rdf_mapping" : []
   }');
   return $items;

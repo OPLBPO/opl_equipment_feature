@@ -293,7 +293,7 @@ function opl_equipment_feature_default_page_manager_handlers() {
   $pane->access = array();
   $pane->configuration = array(
     'label' => 'title',
-    'formatter' => 'branch_title_with_address',
+    'formatter' => 'branch_title_with_address_new',
     'delta_limit' => 0,
     'delta_offset' => '0',
     'delta_reversed' => FALSE,

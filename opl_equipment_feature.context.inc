@@ -23,7 +23,18 @@ function opl_equipment_feature_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-site_announcements-block_4' => array(
+          'module' => 'views',
+          'delta' => 'site_announcements-block_4',
+          'region' => 'site_announcements',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables

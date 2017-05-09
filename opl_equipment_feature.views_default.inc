@@ -200,7 +200,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
   $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -418,7 +418,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -592,7 +592,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -671,7 +671,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -762,7 +762,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
   $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -875,7 +875,7 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -975,13 +975,6 @@ function opl_equipment_feature_views_default_views() {
   $handler->display->display_options['relationships']['field_guide_nid']['field'] = 'field_guide_nid';
   $handler->display->display_options['relationships']['field_guide_nid']['delta'] = '-1';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Available Software */
-  $handler->display->display_options['fields']['field_available_software1']['id'] = 'field_available_software1';
-  $handler->display->display_options['fields']['field_available_software1']['table'] = 'field_data_field_available_software1';
-  $handler->display->display_options['fields']['field_available_software1']['field'] = 'field_available_software1';
-  $handler->display->display_options['fields']['field_available_software1']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_available_software1']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_available_software1']['delta_offset'] = '0';
   /* Field: Entity translation: Available Software: translated */
   $handler->display->display_options['fields']['field_available_software1_et']['id'] = 'field_available_software1_et';
   $handler->display->display_options['fields']['field_available_software1_et']['table'] = 'field_data_field_available_software1';
@@ -1056,7 +1049,6 @@ function opl_equipment_feature_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Select any filter and click on Apply to see results'),
     t('Items per page'),
     t('- All -'),
     t('Offset'),
@@ -1085,7 +1077,6 @@ function opl_equipment_feature_views_default_views() {
     t('Content pane 2'),
     t('field_available_software1'),
     t('field_guide'),
-    t('Available Software'),
     t('Related Hardware'),
     t('Equipment Type'),
     t('Project Types'),
